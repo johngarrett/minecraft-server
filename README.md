@@ -7,16 +7,16 @@ add existing server path in docker-compose.yml
 
 
 ## run
-docker compose build
-docker compose up
+`docker compose build`
+`docker compose up`
 
 
 ## see logs
 #### Attach to the live server console
-docker attach minecraft-server
+`docker attach minecraft-server`
 
 ### Detach without stopping the server
-Ctrl+P, Ctrl+Q
+`Ctrl+P, Ctrl+Q`
 
 ### View logs without attaching
-docker logs -f minecraft-server
+`docker logs -f minecraft-server`
