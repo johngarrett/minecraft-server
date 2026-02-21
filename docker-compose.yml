@@ -14,7 +14,7 @@ services:
       - "19132:19132/udp"   # Bedrock via GeyserMC
 
     volumes:
-      - /Users/garrepi/dev/minecraft-server/sample-server:/server
+      - ~/minecraft-server/server-files:/server
 
     stdin_open: true
     tty: true
