@@ -1,0 +1,20 @@
+services:
+  minecraft:
+    build: .
+    container_name: minecraft-server
+    restart: unless-stopped
+
+    environment:
+      - MC_VERSION=1.21.4   # Change to match your world's version
+      - MEMORY_MIN=1G
+      - MEMORY_MAX=4G
+
+    ports:
+      - "25565:25565/tcp"   # Java Edition
+      - "19132:19132/udp"   # Bedrock via GeyserMC
+
+    volumes:
+      - /Users/garrepi/dev/minecraft-server/sample-server:/server
+
+    stdin_open: true
+    tty: true
